@@ -30,7 +30,7 @@ def play(songs)
   inp = gets.chomp 
   num = inp.to_i - 1 
   
-  if num < 0 && songs.key(inp)
+  if num < 0 && !!songs.key(inp)
     song_index = songs.index(inp)
     puts "Playing #{songs[song_index]}"
   end 
