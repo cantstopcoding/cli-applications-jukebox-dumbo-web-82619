@@ -35,6 +35,8 @@ def play(songs)
     puts "Playing #{songs[index_of_songs]}"
   elsif num >= 0 && !!songs[num]
     puts "Playing #{songs[num]}"
+  else
+    puts 
   end 
 end 
 
