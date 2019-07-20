@@ -26,6 +26,10 @@ def list(songs)
 end 
 
 def play(songs)
-  puts 
+  puts "Please enter a song name or number:"
+  inp = gets.chomp 
+  num = inp.to_i - 1 
+  
+  if num < 0 
 end 
 
