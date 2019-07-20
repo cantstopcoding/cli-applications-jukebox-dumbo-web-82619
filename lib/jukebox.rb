@@ -55,6 +55,8 @@ def run(songs)
       break
     elsif inp == "list"  
       list(songs)
+    elsif inp == "play"
+      play(songs)
     end 
   end
 end 
