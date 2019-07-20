@@ -26,7 +26,13 @@ def list(songs)
 end 
 
 def play(songs)
-  puts 
+  puts "Please enter a song name or number:"
+  inp = gets.chomp 
+  num = inp.to_i - 1
   
+  if num < 0 && songs.include?(inp)
+    index_of_songs = songs.index(inp)
+    puts "Playing #{songs[index_of_songs]}"
+  end 
 end 
 
