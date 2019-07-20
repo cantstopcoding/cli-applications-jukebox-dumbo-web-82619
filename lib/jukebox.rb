@@ -33,6 +33,8 @@ def play(songs)
   if songs.include?(inp)
     index_of_songs = songs.index(inp)
     puts "Playing #{songs[index_of_songs]}"
+  elsif num >= 0 && !!songs[num]
+    puts "Playing #{songs[num]}"
   end 
 end 
 
