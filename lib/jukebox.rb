@@ -46,10 +46,10 @@ end
 
 def run(songs)
   help
-  puts "Please enter a command:"
-  inp = gets.strip
   
   while true 
+    puts "Please enter a command:"
+    inp = gets.strip
     if inp.downcase == "exit"
       exit_jukebox
       break 
