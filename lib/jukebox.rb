@@ -26,8 +26,7 @@ def list(songs)
 end 
 
 def play(songs)
+  puts 
   
-  inp = gets.chomp 
-  num = 
 end 
 
