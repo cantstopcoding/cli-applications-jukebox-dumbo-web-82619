@@ -28,7 +28,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   inp = gets.chomp 
-  num = inp.to_i 
+  num = inp.to_i - 1
   
   if songs.include(inp)
     index_of_songs = song.index(inp)
