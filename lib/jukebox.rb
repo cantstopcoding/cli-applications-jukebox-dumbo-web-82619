@@ -47,7 +47,13 @@ end
 def run(songs)
   help 
   while true 
+    puts "Please enter a command:"
+    inp = gets.strip 
     
+    if inp == "exit"
+      exit_jukebox
+      break
+    end 
   end 
 end 
 
