@@ -53,6 +53,9 @@ def run(songs)
     if inp == "exit"
       exit_jukebox
       break
+    elsif
+      if inp == "list"
+        list(songs)
     end 
   end 
 end 
