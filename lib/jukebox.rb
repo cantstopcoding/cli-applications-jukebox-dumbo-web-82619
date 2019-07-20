@@ -31,7 +31,7 @@ def play(songs)
   num = inp.to_i - 1
   
   if songs.include?(inp)
-    index_of_songs = song.index(inp)
+    index_of_songs = songs.index(inp)
     puts "Playing #{songs[index_of_songs]}"
   end 
 end 
