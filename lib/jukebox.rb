@@ -26,38 +26,6 @@ def list(songs)
 end 
 
 def play(songs)
-  puts "Please enter a song name or number:"
-  inp = gets.chomp 
-  num = inp.to_i - 1
   
-  if num < 0 && songs.include?(inp)
-    index_of_songs = songs.index(inp)
-    puts "Playing #{songs[index_of_songs]}"
-  elsif num >= 0 && !!songs[num]
-    puts "Playing #{songs[num]}"
-  else
-    puts "Invalid input, please try again"
-  end 
-end 
-
-def exit_jukebox
-  puts "Goodbye"
-end 
-
-def run(songs)
-  help
-  
-  while true 
-    puts "Please enter a command:"
-    inp = gets.strip
-    if inp.downcase == "exit"
-      exit_jukebox
-      break
-    elsif inp == "list"  
-      list(songs)
-    elsif inp == "play"
-      play(songs)
-    end 
-  end
 end 
 
