@@ -57,6 +57,8 @@ def run(songs)
       list(songs)
     elsif inp == "play"
       play(songs)
+    else 
+      puts "Invalid input"
     end 
   end 
 end 
