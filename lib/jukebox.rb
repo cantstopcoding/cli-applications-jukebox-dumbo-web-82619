@@ -36,7 +36,7 @@ def play(songs)
   elsif num >= 0 && !!songs[num]
     puts "Playing #{songs[num]}"
   else
-    puts 
+    puts "Invalid input, please try again"
   end 
 end 
 
