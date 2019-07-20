@@ -30,8 +30,9 @@ def play(songs)
   inp = gets.chomp 
   num = inp.to_i 
   
-  if num < 0 && songs.include()
-    
+  if num < 0 && songs.include?(inp)
+    index_of_songs = songs.index(inp)
+    puts "Playing #{songs[index_of_songs]}"
   end 
 end 
 
