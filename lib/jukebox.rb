@@ -31,7 +31,8 @@ def play(songs)
   num = inp.to_i - 1 
   
   if num < 0 && songs.key(inp)
-    index = songs.index
+    song_index = songs.index(inp)
+    puts "Playing #{songs[song_index]}"
   end 
 end 
 
