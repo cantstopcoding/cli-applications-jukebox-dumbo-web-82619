@@ -44,5 +44,16 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
-
+def run(songs)
+  help
+  puts "Please enter a command:"
+  inp = gets.strip
+  
+  while true 
+    if inp.downcase == "exit"
+      exit_jukebox
+      break 
+    end 
+  end
+end 
 
