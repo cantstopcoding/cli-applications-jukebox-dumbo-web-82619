@@ -52,7 +52,9 @@ def run(songs)
     inp = gets.strip
     if inp.downcase == "exit"
       exit_jukebox
-      break 
+      break
+    elsif inp == "list"  
+      list(songs)
     end 
   end
 end 
